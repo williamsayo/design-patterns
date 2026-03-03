@@ -1,19 +1,21 @@
 import abstracts.Button;
 import abstracts.Checkbox;
 import abstracts.TextField;
+import abstracts.UiFactory;
 import factory.AFactory;
 import factory.BFactory;
 
 public class Main {
     public static void main(String[] args) {
-        Button button =new AFactory().createButton("Button");
-        TextField textField =new AFactory().createTextField("Text field");
-        Checkbox checkbox =new AFactory().createCheckbox("Checkbox");
+        UiFactory factory = new AFactory();
+        Button button = factory.createButton("Button");
+        TextField textField =factory.createTextField("Text field");
+        Checkbox checkbox =factory.createCheckbox("Checkbox");
 
-
-        Button button2 =new BFactory().createButton("Click me");
-        TextField textField2 =new BFactory().createTextField("Text field2");
-        Checkbox checkbox2 =new BFactory().createCheckbox("Check me");
+        UiFactory bFactory = new BFactory();
+        Button button2 =bFactory.createButton("Click me");
+        TextField textField2 =bFactory.createTextField("Text field2");
+        Checkbox checkbox2 =bFactory.createCheckbox("Check me");
 
         button.display();
         textField.display();
