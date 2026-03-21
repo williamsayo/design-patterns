@@ -1,4 +1,7 @@
 package filesystem;
 
-public interface FileSystem {
+public interface FileSystemElement {
+    String getName();
+    double getSize();
+    void accept(FileSystemVisitor visitor);
 }
