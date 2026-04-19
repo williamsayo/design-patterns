@@ -1,0 +1,115 @@
+
+.root-pane {
+    -fx-background-color: #2E3540;
+    -fx-background-radius: 10;
+}
+
+.header-bar {
+    -fx-background-color: #1E2730;
+    -fx-border-color: transparent transparent #263040 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.status-dot-wrapper {
+    -fx-alignment: center;
+}
+
+/* Username in header */
+.header-username {
+    -fx-font-family: Monospaced;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4A90D9;
+    -fx-letter-spacing: 0.08em;
+}
+
+.online-badge {
+    -fx-padding: 3 9 3 7;
+}
+
+.badge-dot {
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #68D391;
+}
+
+.badge-text {
+    -fx-font-family: Monospaced;
+    -fx-font-size: 9px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #68D391;
+}
+
+.message-scroll {
+    -fx-background: #252B33;
+    -fx-background-color: #252B33;
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+.message-area {
+    -fx-background-color: #252B33;
+    -fx-control-inner-background: #252B33;
+    -fx-text-fill: #D4CFC8;
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 13;
+    -fx-border-color: transparent;
+}
+
+.message-area .content {
+    -fx-background-color: #252B33;
+}
+
+.field-label {
+    -fx-text-fill: #FFF;
+}
+
+.recipient-combo {
+    -fx-background-color: #2E3540;
+    -fx-border-color: #FFF;
+    -fx-border-width: 1;
+    -fx-text-fill: #E8EAF0;
+    -fx-cursor: hand;
+}
+
+.recipient-combo .list-view {
+    -fx-background-color: #2E3540;
+}
+
+.recipient-combo .list-cell {
+    -fx-background-color: #2E3540;
+    -fx-text-fill: #D4CFC8;
+    -fx-font-family: "Courier New", monospace;
+    -fx-cursor: hand;
+}
+
+.recipient-combo .list-cell:hover {
+    -fx-background-color: #4A90D9;
+}
+
+.message-input {
+    -fx-background-color: #2E3540;
+    -fx-border-color: #3A4454;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-font-size: 12px;
+    -fx-text-fill: #E8EAF0;
+    -fx-padding: 6 12 6 12;
+    -fx-font-family: "Courier New", monospace;
+}
+
+.send-button {
+    -fx-background-color: #4A90D9;
+    -fx-text-fill: #FFF;
+    -fx-font-weight: bold;
+    -fx-padding: 6 18 6 18;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+
+.send-button:hover {
+    -fx-background-color: #2E3A4E;
+}

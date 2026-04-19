@@ -1,5 +1,7 @@
+package composite;
+
 public class Organization extends OrganizationComponent {
-    private Department organization;
+    private final Department organization;
 
     public Organization(String name) {
         super(name);

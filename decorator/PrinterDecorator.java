@@ -1,7 +1,7 @@
 package decorator;
 
 public class PrinterDecorator implements Printer {
-    private Printer printer;
+    private final Printer printer;
 
     public PrinterDecorator(Printer decoratedPrinter) {
         this.printer = decoratedPrinter;

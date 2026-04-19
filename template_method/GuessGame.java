@@ -31,7 +31,7 @@ public class GuessGame extends Game {
     public void playSingleTurn(int player) {
         currentPlayer = player;
         System.out.println("Player " + currentPlayer +" is taking their turn.");
-        System.out.printf("Guess a number between 1 and 10: ");
+        System.out.print("Guess a number between 1 and 10: ");
         this.guess = scanner.nextInt();
     }
 

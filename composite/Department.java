@@ -1,8 +1,12 @@
+package composite;
+
+import composite.OrganizationComponent;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Department extends OrganizationComponent {
-    private List<OrganizationComponent> component = new ArrayList<>();
+    private final List<OrganizationComponent> component = new ArrayList<>();
 
     public Department(String name) {
         super(name);

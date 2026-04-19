@@ -1,5 +1,9 @@
+package composite;
+
+import composite.OrganizationComponent;
+
 public class Employee extends OrganizationComponent {
-    private double salary;
+    private final double salary;
 
     public Employee(String name, double salary) {
         super(name);

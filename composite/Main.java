@@ -1,3 +1,5 @@
+package composite;
+
 class Main {
 public static void main(String[] args) {
     OrganizationComponent emp1 = new Employee("John", 500);
